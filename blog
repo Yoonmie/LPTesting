@@ -1,0 +1,32 @@
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LP カスタマイズテスト</title>
+</head>
+<body>
+    <h1 class="title">LPカスタマイズテス�h1>
+<h2 class="sub-title">This is Sub title</h2>
+<div class="content">Lorem ipsum dolor sit amet consectetur, </div>
+<script src="https://test-manage.lpcutom.datora.org/cdn/content.js"></script>
+ <script src="http://127.0.0.1:8000/cdn/content.js"></script>
+<script>
+    const lpCustomizer = new LpCustomizer({ key: "738fb02b89c56403d290c6eb969d7dd04334bc57288aabb8e0e3cc51702515ab" });
+    lpCustomizer.getData();
+</script>
+    
+
+<script src="https://test-manage.lpcutom.datora.org/cdn/conversion.js"></script>
+<script>
+    const lpConversion = new LpConversion({key: "14", conversion_page_id: "70"})
+    lpConversion.conversion();
+</script>
+ <script src="http://127.0.0.1:8000/cdn/conversion.js"></script>
+<script>
+    const lpConversion = new LpConversion({key: "738fb02b89c56403d290c6eb969d7dd04334bc57288aabb8e0e3cc51702515ab", conversion_page_id: "5"})
+    lpConversion.conversion();
+</script>
+ 
+</body>
+</html>
